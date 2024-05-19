@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Dictionary;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,9 +25,9 @@ public class App {
                     List<int[]> l = new ArrayList<>();
 
                     for (int i : len) {
-                        l .add(generation.randomArray(i, true));
+                        l.add(generation.randomArray(i, true));
                     }
-                    list=l;
+                    list = l;
                     break;
                 case 2:
                     for (int[] i : list) {
@@ -39,10 +38,11 @@ public class App {
                     }
                     break;
                 default:
-                System.out.println("Saliendo...");
+                    System.out.println("Saliendo...");
                     break;
             }
         } while (op != 0);
+        sc.close();
 
     }
 }
